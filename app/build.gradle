@@ -6,6 +6,10 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 28
+
+    def propertiesFile = rootProject.file("keystore.properties")
+    def properties = new Properties()
+    properties.load(new FileInputStream(propertiesFile))
     defaultConfig {
         applicationId "com.veenapilli.learningthroughoxford"
         minSdkVersion 15
