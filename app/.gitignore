@@ -1,0 +1,32 @@
+/build
+
+# Android Studio
+.idea
+.idea/workspace.xml
+*.iml
+*.swp
+
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+npm-debug.log
+
+# OSX files
+.DS_Store
+
+/local.properties
+/captures
+/.idea/workspace.xml
+bin/
+R.java
+gen/
+
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
