@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/placeholder">
+
+    <fragment android:id="@+id/placeholder">
+        <action android:id="@+id/action_placeholder_to_landingFragment" app:destination="@id/landingFragment"/>
+    </fragment>
+    <fragment android:id="@+id/searchFragment" android:name="com.veenapilli.learningthroughoxford.SearchFragment"
+              android:label="fragment_search" tools:layout="@layout/fragment_search">
+        <action android:id="@+id/action_searchFragment_to_landingFragment" app:destination="@id/landingFragment"/>
+    </fragment>
+    <activity android:id="@+id/landingActivity2"
+              android:name="com.veenapilli.learningthroughoxford.features.main.LandingActivity"
+              android:label="activity_landing" tools:layout="@layout/activity_landing"/>
+    <fragment android:id="@+id/landingFragment" android:name="com.veenapilli.learningthroughoxford.LandingFragment"
+              android:label="fragment_landing" tools:layout="@layout/fragment_landing">
+        <action android:id="@+id/action_landingFragment_to_searchFragment" app:destination="@id/searchFragment"/>
+        <action android:id="@+id/action_landingFragment_to_placeholder" app:destination="@id/placeholder"/>
+        <action android:id="@+id/action_landingFragment_to_lemmaFragment22" app:destination="@id/lemmaFragment2"/>
+    </fragment>
+    <fragment android:id="@+id/lemmaFragment2" android:name="com.veenapilli.learningthroughoxford.LemmaFragment"
+              android:label="fragment_lemma" tools:layout="@layout/fragment_lemma">
+        <action android:id="@+id/action_lemmaFragment2_to_landingFragment" app:destination="@id/landingFragment"/>
+    </fragment>
+</navigation>
