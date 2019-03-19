@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/oxford"
+                android:icon="@android:drawable/ic_menu_sort_alphabetically"
+                android:title="@string/alpha" />
+        <item
+                android:id="@+id/collapse"
+                android:icon="@android:drawable/ic_menu_rotate"
+                android:title="@string/collapse" />
+    </group>
+</menu>

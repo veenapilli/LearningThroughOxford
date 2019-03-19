@@ -1,4 +1,4 @@
-package com.veenapilli.learningthroughoxford
+package com.veenapilli.learningthrough
 
 import org.junit.Test
 
