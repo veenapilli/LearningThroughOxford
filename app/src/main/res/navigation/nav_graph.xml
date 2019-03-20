@@ -5,22 +5,22 @@
             app:startDestination="@id/landingFragment">
 
     <activity android:id="@+id/landingActivity2"
-              android:name="com.veenapilli.learningthrough.features.collapsing.justactivitiy.CollapsibleToolbarActivity"
+              android:name="com.veenapilli.learningthroughoxford.features.collapsing.justactivitiy.CollapsibleToolbarActivity"
               android:label="activity_landing" tools:layout="@layout/activity_landing"/>
     <fragment android:id="@+id/placeholder">
         <action android:id="@+id/action_placeholder_to_landingFragment" app:destination="@id/landingFragment"/>
     </fragment>
-    <fragment android:id="@+id/searchFragment" android:name="com.veenapilli.learningthrough.features.oxford.fragments.SearchFragment"
+    <fragment android:id="@+id/searchFragment" android:name="com.veenapilli.learningthroughoxford.features.oxford.fragments.SearchFragment"
               android:label="fragment_search" tools:layout="@layout/fragment_search">
         <action android:id="@+id/action_searchFragment_to_landingFragment" app:destination="@id/landingFragment"/>
     </fragment>
-    <fragment android:id="@+id/landingFragment" android:name="com.veenapilli.learningthrough.features.oxford.fragments.LandingFragment"
+    <fragment android:id="@+id/landingFragment" android:name="com.veenapilli.learningthroughoxford.features.oxford.fragments.LandingFragment"
               android:label="fragment_landing" tools:layout="@layout/fragment_landing">
         <action android:id="@+id/action_landingFragment_to_searchFragment" app:destination="@id/searchFragment"/>
         <action android:id="@+id/action_landingFragment_to_placeholder" app:destination="@id/placeholder"/>
         <action android:id="@+id/action_landingFragment_to_lemmaFragment22" app:destination="@id/lemmaFragment2"/>
     </fragment>
-    <fragment android:id="@+id/lemmaFragment2" android:name="com.veenapilli.learningthrough.features.oxford.fragments.LemmaFragment"
+    <fragment android:id="@+id/lemmaFragment2" android:name="com.veenapilli.learningthroughoxford.features.oxford.fragments.LemmaFragment"
               android:label="fragment_lemma" tools:layout="@layout/fragment_lemma">
         <action android:id="@+id/action_lemmaFragment2_to_landingFragment" app:destination="@id/landingFragment"/>
     </fragment>

@@ -1,0 +1,6 @@
+project.ext {
+    dependency = [
+            firebaseCore: '11.4.2',
+            firebaseMessaging: '11.4.2'
+    ]
+}
