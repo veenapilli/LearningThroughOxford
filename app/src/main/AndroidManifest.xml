@@ -29,7 +29,11 @@
                 android:name="com.veenapilli.learningthroughoxford.features.collapsing.justactivitiy.CollapsibleToolbarActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
+        <service android:name=".features.firebase.LocalFirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
         <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
      See README(https://goo.gl/l4GJaQ) for more. -->
@@ -41,6 +45,10 @@
         <meta-data
                 android:name="com.google.firebase.messaging.default_notification_color"
                 android:resource="@color/colorAccent"/>
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/default_notification_channel_id"/>
+
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import com.google.firebase.iid.FirebaseInstanceId
 import com.veenapilli.learningthroughoxford.R
 import com.veenapilli.learningthroughoxford.features.collapsing.justactivitiy.CollapsibleToolbarActivity
 import com.veenapilli.learningthroughoxford.features.firebase.Messaging
+import com.veenapilli.learningthroughoxford.features.firebase.NotificationHelper
 import com.veenapilli.learningthroughoxford.features.oxford.fragments.LandingFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.doAsync
@@ -28,6 +29,14 @@ class MainActivity : AppCompatActivity() {
         //TODO: indexing: https://developer.android.com/studio/write/app-link-indexing
         // endregion
 
+        val extras = intent.extras
+        extras?.let{
+            val source = it["source"]
+            source?.let{
+                val intent = NotificationHelper().routingHelper(source.toString(), this )
+                startActivity(intent)
+            }
+        }
         setContentView(R.layout.activity_main)
         nav_view.setNavigationItemSelectedListener { menuItem ->
             // set item as selected to persist highlight

@@ -8,4 +8,15 @@
     </string>
     <string name="alpha">Alpha</string>
     <string name="collapse">Collapse</string>
+
+    <string name="channel_name_1">default_channel_1</string>
+    <string name="channel_description_1">One stop channel for app notifications 1</string>
+
+    <string name="channel_name_2">default_channel_2</string>
+    <string name="channel_description_2">One stop channel for app notifications 2</string>
+
+    <string name="channel_name_3">default_channel_3</string>
+    <string name="channel_description_3">One stop channel for app notifications 3</string>
+
+    <string name="default_notification_channel_id">1234567890_default</string>
 </resources>
